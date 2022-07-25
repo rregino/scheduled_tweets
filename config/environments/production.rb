@@ -92,6 +92,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.action_mailer.default_url_options = { host: "scheduled-tweetz.herokuapp.com" }
+  config.action_mailer.perform_deliveries = false
 
   config.active_job.queue_adapter = :sidekiq
 end
